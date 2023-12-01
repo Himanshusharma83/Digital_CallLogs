@@ -1,12 +1,12 @@
 # digital_node
 
-A new Flutter project.
+Call Logs
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+Clone the repository: git clone https://github.com/your-username/digital_node.git
+Navigate to the project folder: cd digital_node
+Run the app: flutter run
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
