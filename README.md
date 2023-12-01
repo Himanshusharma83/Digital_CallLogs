@@ -46,3 +46,39 @@ If valid, navigates to the HomePage.
 If invalid, displays a SnackBar with an "Invalid credentials" message.
 
 ![Your Image Alt Text](assets/ScreenshotLoginPass.png)
+
+
+HomePage Widget Explanation:
+The HomePage widget is responsible for displaying call logs, fetching data from the device's call history. It includes an app bar, a welcome message, and a list of call logs.
+
+State Variables:
+
+callLogs: A list to store call log entries.
+prefs: SharedPreferences instance to store the last opened time.
+lastOpenedTime: DateTime variable to track the last time the app was opened.
+Initialization (initState):
+
+Calls _initSharedPreferences to initialize SharedPreferences.
+Calls _checkAndLoadCallLogs to check and request phone permission.
+SharedPreferences (_initSharedPreferences):
+
+Initializes SharedPreferences to store the last opened time.
+Permission Check (_checkAndLoadCallLogs):
+
+Requests phone permission using the Permission.phone package.
+If granted, calls _loadCallLogs to fetch and display call logs.
+Load Call Logs (_loadCallLogs):
+
+Fetches call logs using the call_log package.
+Filters call logs based on the last opened time.
+Updates the UI with the new call logs and saves the current time.
+UI Building (build):
+
+Displays a Scaffold with an AppBar and a body.
+The body contains a welcome message and a ListView of call logs.
+Each call log is represented by a Card with a ListTile.
+Color Coding (_getColorForCallType):
+
+A helper method to assign colors based on call types (incoming, outgoing, missed).
+
+![Your Image Alt Text](assets/Homepage.png)
