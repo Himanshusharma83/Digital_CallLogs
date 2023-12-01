@@ -4,8 +4,9 @@ Call Logs
 
 ## Getting Started
 
-Clone the repository: git clone https://github.com/your-username/digital_node.git
-Navigate to the project folder: cd digital_node
+Clone the repository: git clone https://github.com/Himanshusharma83/Digital_CallLogs.git
+Navigate to the project folder:
+ cd digital_node
 Run the app: flutter run
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
